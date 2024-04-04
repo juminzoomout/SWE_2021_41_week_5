@@ -1,0 +1,10 @@
+#!/bin/bash
+
+smallLetters=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+capitalLetters=(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+
+for i in {0..25}
+do
+  mv ./files/${smallLetters[i]}*.txt ${smallLetters[i]}
+  mv ./files/${capitalLetters[i]}*.txt ${smallLetters[i]}
+done
